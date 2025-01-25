@@ -12,17 +12,17 @@ form.addEventListener('submit', function(e){
     const mensagemVerdade = `Esta valido o número${campoB} é acima do numero ${campoA}`;
 
     if(campoA >= campoB){
-        const containerFalso = document.querySelector('.mensagen-falso');
+        const containerFalso = document.querySelector('.mensagem-falso');
         containerFalso.innerHTML = mensagemFalso;
         containerFalso.style.display = 'block';
-        document.querySelector('.mensagem-verdade').style.display = 'none';
+        document.querySelector('.mensagem-verdadeira').style.display = 'none';
     }
     
 else{
-    const containerVerdade = document.querySelector('.mensagen-verdade');
-        containerVerdade.innerHTML = mensagemVerdade;
-        containerVerdade.style.display = 'block';
-        document.querySelector('.mensagen-falso').style.display = 'none';
+    const containerVerdadeira = document.querySelector('.mensagem-verdadeira');
+        containerVerdadeira.innerHTML = mensagemVerdade;
+        containerVerdadeira.style.display = 'block';
+        document.querySelector('.mensagem-falso').style.display = 'none';
 }
 
 });
